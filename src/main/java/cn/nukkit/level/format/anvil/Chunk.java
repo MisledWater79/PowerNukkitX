@@ -103,6 +103,7 @@ public class Chunk extends BaseChunk {
             throw new ChunkException("Invalid amount of chunks");
         }
 
+        //todo: impl 3D biomes
         if (nbt.contains("BiomeColors")) {
             this.biomes = new byte[16 * 16];
             int[] biomeColors = nbt.getIntArray("BiomeColors");

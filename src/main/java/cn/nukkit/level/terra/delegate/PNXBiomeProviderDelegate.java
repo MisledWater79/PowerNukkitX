@@ -20,7 +20,7 @@ public class PNXBiomeProviderDelegate implements BiomeProvider {
         cacheMap = new WeakHashMap<>();
     }
 
-    //todo: support 3D biomes
+    //todo: impl 3D biomes
     @Override
     public Biome getBiome(int x,int y, int z, long seed) {
         final var hash = MathUtil.squash(x, z);

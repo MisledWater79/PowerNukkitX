@@ -18,6 +18,7 @@ public record PNXEnchantmentDelegate(cn.nukkit.item.enchantment.Enchantment inne
         return !innerEnchantment.isCompatibleWith(((PNXEnchantmentDelegate)enchantment).innerEnchantment);
     }
 
+    //todo: pnx内置有id -> str的mapping，使用新的mapping
     @Override
     public String getID() {
         return switch (innerEnchantment.getId()) {
